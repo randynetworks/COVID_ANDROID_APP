@@ -26,9 +26,9 @@ public class FormSuccess extends AppCompatActivity {
         TextView lblEmail = (TextView) findViewById(R.id.email_success);
         TextView lblAlamat = (TextView) findViewById(R.id.alamat_success);
 
-        lblNama.setText("Nama kamu, " + strNama);
-        lblEmail.setText("Emailnya, " + strEmail);
-        lblAlamat.setText("Alamat kamu ada di, " + strAlamat);
+        lblNama.setText("Hi, " + strNama + "!");
+        lblEmail.setText("Kamu Telah terdaftar Vaksinasi dengan email ini,\n" + strEmail);
+        lblAlamat.setText("Vaksinasi akan berada di daerah alamat,\n" + strAlamat);
     }
 
 
