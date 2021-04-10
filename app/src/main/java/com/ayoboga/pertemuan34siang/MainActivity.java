@@ -67,6 +67,9 @@ public class MainActivity extends AppCompatActivity {
     public class submitForm implements View.OnClickListener {
         @Override
         public void onClick(View v) {
+
+
+
             EditText textNama = findViewById(R.id.id_name);
             EditText textEmail = findViewById(R.id.id_email);
             EditText textAlamat = findViewById(R.id.id_alamat);
@@ -83,6 +86,16 @@ public class MainActivity extends AppCompatActivity {
             String strDate = textDate.getText().toString();
             String strJK = JK.getText().toString();
             boolean status = sakit.isChecked();
+
+            System.out.println("Data pada Variable :");
+            System.out.println("Data Input Nama\t\t\t" + strNama);
+            System.out.println("Data Input NIK\t\t\t" + strNIK);
+            System.out.println("Data Input JK\t\t\t" + strJK);
+            System.out.println("Data Input Date\t\t\t" + strDate);
+            System.out.println("Data Input Email\t\t\t" + strEmail);
+            System.out.println("Data Input Alamat\t\t" + strAlamat);
+            System.out.println("Data Input Status\t\t" + status);
+
 
             Intent formSuccess = new Intent(MainActivity.this, FormSuccess.class);
             formSuccess.putExtra("VAR_NAMA", strNama);
