@@ -189,6 +189,25 @@
                 android:textSize="14sp" />
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <Switch
+                android:id="@+id/id_is_Sick"
+                android:layout_width="263dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:showText="true"
+                android:splitTrack="false"
+                android:text="Kamu Sakit ?"
+                android:textOff="Engga"
+                android:textOn="Sakit"
+                tools:checked="false" />
+        </LinearLayout>
+
         <Button
             android:id="@+id/buttonSubmit"
             android:layout_width="match_parent"

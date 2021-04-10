@@ -13,6 +13,7 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Switch;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -73,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
             EditText textDate = findViewById(R.id.id_tgl);
             RadioGroup radioJK = findViewById(R.id.id_JK);
             RadioButton JK = findViewById(radioJK.getCheckedRadioButtonId());
+            Switch sakit = findViewById(R.id.id_is_Sick);
 
             String strNama = textNama.getText().toString();
             String strEmail = textEmail.getText().toString();
@@ -80,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
             String strNIK = textNIK.getText().toString();
             String strDate = textDate.getText().toString();
             String strJK = JK.getText().toString();
+            boolean status = sakit.isChecked();
 
             Intent formSuccess = new Intent(MainActivity.this, FormSuccess.class);
             formSuccess.putExtra("VAR_NAMA", strNama);
@@ -88,6 +91,7 @@ public class MainActivity extends AppCompatActivity {
             formSuccess.putExtra("VAR_DATE", strDate);
             formSuccess.putExtra("VAR_ALAMAT", strAlamat);
             formSuccess.putExtra("VAR_EMAIL", strEmail);
+            formSuccess.putExtra("VAR_STATUS", status);
 
             startActivity(formSuccess);
         }

@@ -25,6 +25,7 @@ public class FormSuccess extends AppCompatActivity {
         String strDate = getIntent().getStringExtra("VAR_DATE");
         String strAlamat = getIntent().getStringExtra("VAR_ALAMAT");
         String strEmail = getIntent().getStringExtra("VAR_EMAIL");
+        Boolean status = getIntent().getBooleanExtra("VAR_STATUS", false);
 
 
 
@@ -34,6 +35,7 @@ public class FormSuccess extends AppCompatActivity {
         TextView lblTgl = (TextView) findViewById(R.id.tgl_success);
         TextView lblAlamat = (TextView) findViewById(R.id.alamat_success);
         TextView lblEmail = (TextView) findViewById(R.id.email_success);
+        TextView lblStatus = (TextView) findViewById(R.id.status_success);
 
         lblNama.setText("Hi, " + strNama + "!");
         lblNIK.setText("NIK kamu, " + strNIK + ",");
@@ -41,6 +43,12 @@ public class FormSuccess extends AppCompatActivity {
         lblTgl.setText("Dan Tanggal Lahir, " + strDate + ",");
         lblEmail.setText("Kamu Telah terdaftar Vaksinasi dengan email ini,\n" + strEmail);
         lblAlamat.setText("Vaksinasi akan berada di daerah alamat,\n" + strAlamat);
+
+        if (status) {
+            lblStatus.setText("Kamu Lagi Sakit!, Tunggu sembuh dulu!");
+        } else {
+            lblStatus.setText("Karena Kamu sehat, Kamu akan di Vaksin!");
+        }
     }
 
 
