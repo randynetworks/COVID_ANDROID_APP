@@ -9,7 +9,7 @@
         android:id="@+id/imageView4"
         android:layout_width="307dp"
         android:layout_height="129dp"
-        android:layout_marginBottom="44dp"
+        android:layout_marginBottom="28dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,6 +27,16 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/tgl_success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:text="Tanggal Lahir"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jk_success" />
+
+    <TextView
         android:id="@+id/email_success"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -35,7 +45,7 @@
         android:text="Alamat Email"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/alamat_success" />
+        app:layout_constraintTop_toBottomOf="@+id/negara_success" />
 
     <TextView
         android:id="@+id/alamat_success"
@@ -65,12 +75,12 @@
         android:id="@+id/status_success"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="44dp"
+        android:layout_marginBottom="24dp"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/imageView4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -84,16 +94,6 @@
         app:layout_constraintTop_toBottomOf="@+id/nama_success" />
 
     <TextView
-        android:id="@+id/tgl_success"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
-        android:text="Tanggal Lahir"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/jk_success" />
-
-    <TextView
         android:id="@+id/jk_success"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -102,5 +102,15 @@
         android:text="Jenis Kelamin"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nik_success" />
+
+    <TextView
+        android:id="@+id/negara_success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Kewarganegaraan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alamat_success" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

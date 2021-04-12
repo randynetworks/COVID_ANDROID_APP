@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Pendaftaran Vaksin Covid-19</string>
+    <string-array name="data_kota">
+        <item>--Pilih Kota Tinggal --</item>
+        <item>Bandung</item>
+        <item>Jakarta</item>
+        <item>Bekasi</item>
+        <item>Tasikmalaya</item>
+        <item>Garut</item>
+    </string-array>
 </resources>
