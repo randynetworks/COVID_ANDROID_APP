@@ -43,207 +43,151 @@
                 android:textStyle="bold" />
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="10dp"
-                android:layout_weight="1"
+                style="@style/defaultLayout"
                 android:orientation="horizontal">
 
                 <TextView
+                    style="@style/defautTextViewStyles"
                     android:id="@+id/nama"
-                    android:layout_width="10dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Nama Kamu" />
 
                 <EditText
                     android:id="@+id/id_name"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:ems="10"
+                    style="@style/defautTextInputStyles"
                     android:hint="Masukan Nama Lengkap"
-                    android:inputType="textPersonName"
-                    android:textSize="14sp" />
+                    android:inputType="textPersonName" />
 
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="10dp"
-                android:layout_weight="1"
+                style="@style/defaultLayout"
                 android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/textView2"
-                    android:layout_width="11dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    style="@style/defautTextViewStyles"
                     android:text="NIK" />
 
                 <EditText
                     android:id="@+id/id_NIK"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:ems="10"
+                    style="@style/defautTextInputStyles"
                     android:hint="Masukan NIK"
-                    android:inputType="textPersonName"
-                    android:textSize="14sp" />
+                    android:inputType="textPersonName"/>
 
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="69dp"
-                android:layout_margin="10dp"
-                android:orientation="horizontal">
+
+                style="@style/defaultLayout">
 
                 <TextView
                     android:id="@+id/textView4"
-                    android:layout_width="238dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="fill_vertical"
+                    style="@style/defautTextViewStyles"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:text="Jenis Kelamin" />
 
                 <RadioGroup
                     android:id="@+id/id_JK"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1">
 
                     <RadioButton
                         android:id="@+id/id_JK_P"
-                        android:layout_width="match_parent"
-                        android:layout_height="34dp"
+                        style="@style/defaultRadio"
                         android:checked="true"
                         android:text="Pria" />
 
                     <RadioButton
-                        android:id="@+id/radioButton3"
-                        android:layout_width="match_parent"
-                        android:layout_height="36dp"
+                        android:id="@+id/id_JK_W"
+                        style="@style/defaultRadio"
                         android:text="Wanita" />
                 </RadioGroup>
 
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="10dp"
-                android:orientation="horizontal">
+
+                style="@style/defaultLayout">
 
                 <TextView
                     android:id="@+id/textView9"
-                    android:layout_width="119dp"
-                    android:layout_height="match_parent"
-                    android:gravity="fill_vertical"
+                    style="@style/defautTextViewStyles"
+                    android:layout_width="match_parent"
+                    android:layout_height="26dp"
                     android:text="Kota Lahir" />
 
                 <Spinner
                     android:id="@+id/id_kota"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/defautSpinnerBorder"
                     android:entries="@array/data_kota" />
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="10dp"
+
+                style="@style/defaultLayout"
                 android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/textView7"
-                    android:layout_width="12dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    style="@style/defautTextViewStyles"
                     android:text="Tanggal Lahir" />
 
                 <EditText
                     android:id="@+id/id_tgl"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:ems="10"
+                    style="@style/defautTextInputStyles"
                     android:hint="Pilih Tanggal Lahir"
-                    android:inputType="date"
-                    android:textSize="14sp" />
+                    android:inputType="date" />
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="10dp"
-                android:layout_weight="1"
+
+                style="@style/defaultLayout"
                 android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/textView3"
-                    android:layout_width="9dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    style="@style/defautTextViewStyles"
                     android:text="Alamat Email" />
 
                 <EditText
                     android:id="@+id/id_email"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:ems="10"
+                    style="@style/defautTextInputStyles"
                     android:hint="Masukan email"
-                    android:inputType="textPersonName"
-                    android:textSize="14sp" />
+                    android:inputType="textEmailAddress"/>
 
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="10dp"
-                android:layout_weight="1"
+
+                style="@style/defaultLayout"
                 android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/textView5"
-                    android:layout_width="10dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    style="@style/defautTextViewStyles"
                     android:text="Alamat" />
 
                 <EditText
                     android:id="@+id/id_alamat"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:gravity="start|top"
-                    android:hint="Masukan Alamat"
-                    android:inputType="textMultiLine"
-                    android:textSize="14sp" />
+                    style="@style/defautTextInputStyles"
+                    android:inputType="textMultiLine"/>
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="10dp"
-                android:orientation="horizontal">
+                style="@style/defaultLayout">
 
                 <TextView
                     android:id="@+id/textView10"
-                    android:layout_width="126dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="Kewarganegaraan"
-                    android:textSize="12sp" />
+                    style="@style/defautTextViewStyles"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:text="Kewarganegaraan" />
 
                 <Spinner
                     android:id="@+id/id_negara"
-                    android:layout_width="270dp"
-                    android:layout_height="wrap_content" />
+                    style="@style/defautSpinnerBorder"/>
             </LinearLayout>
 
             <LinearLayout
@@ -267,10 +211,7 @@
 
             <Button
                 android:id="@+id/buttonSubmit"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:layout_weight="1"
+                style="@style/btn_primary"
                 android:text="Simpan" />
 
         </LinearLayout>
