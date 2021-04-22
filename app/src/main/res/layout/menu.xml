@@ -6,50 +6,160 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/btn_form"
-        android:layout_width="347dp"
-        android:layout_height="54dp"
-        android:backgroundTint="@color/light_blue_dark"
-        android:text="Ke Form Pendaftaran"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/btn_website"
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_map"
+                android:layout_width="347dp"
+                android:layout_height="54dp"
+                android:backgroundTint="#66bb6a"
+                android:text="KE WEBSITE MAP"
+                app:layout_constraintEnd_toEndOf="@+id/btnYoutube"
+                app:layout_constraintStart_toStartOf="@+id/btnYoutube"
+                app:layout_constraintTop_toBottomOf="@+id/btnYoutube" />
+
+            <Button
+                android:id="@+id/btn_calculator"
+                android:layout_width="347dp"
+                android:layout_height="54dp"
+                android:backgroundTint="#29b6f6"
+                android:text="KE APLIKASI CALCULATOR"
+                app:layout_constraintEnd_toEndOf="@+id/btn_camera"
+                app:layout_constraintStart_toStartOf="@+id/btn_camera"
+                app:layout_constraintTop_toBottomOf="@+id/btn_camera" />
+
+            <Button
+                android:id="@+id/btn_contact"
+                android:layout_width="347dp"
+                android:layout_height="54dp"
+                android:backgroundTint="#009688"
+                android:text="KE APLIKASI CONTACT"
+                app:layout_constraintEnd_toEndOf="@+id/btn_calendar"
+                app:layout_constraintStart_toStartOf="@+id/btn_calendar"
+                app:layout_constraintTop_toBottomOf="@+id/btn_calendar" />
+
+            <Button
+                android:id="@+id/btnYoutube"
+                android:layout_width="347dp"
+                android:layout_height="54dp"
+                android:backgroundTint="#ef5350"
+                android:text="KE WEBSITE YOUTUBE"
+                app:layout_constraintEnd_toEndOf="@+id/btn_website"
+                app:layout_constraintStart_toStartOf="@+id/btn_website"
+                app:layout_constraintTop_toBottomOf="@+id/btn_website" />
+
+            <Button
+                android:id="@+id/btn_form"
+                android:layout_width="347dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="32dp"
+                android:backgroundTint="@color/light_blue_dark"
+                android:drawableLeft="@drawable/google_forms"
+                android:text="Ke Form Pendaftaran"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+            <Button
+                android:id="@+id/btn_website"
+                android:layout_width="347dp"
+                android:layout_height="54dp"
+                android:backgroundTint="@color/yellow"
+                android:drawableLeft="@drawable/web"
+                android:text="KE WEBSITE RESMI"
+                app:layout_constraintEnd_toEndOf="@+id/btn_form"
+                app:layout_constraintStart_toStartOf="@+id/btn_form"
+                app:layout_constraintTop_toBottomOf="@+id/btn_form" />
+
+            <Button
+                android:id="@+id/btn_calendar"
+                android:layout_width="347dp"
+                android:layout_height="54dp"
+                android:backgroundTint="#3f51b5"
+                android:text="KE APLIKASI CALENDAR"
+                app:layout_constraintEnd_toEndOf="@+id/btn_calculator"
+                app:layout_constraintStart_toStartOf="@+id/btn_calculator"
+                app:layout_constraintTop_toBottomOf="@+id/btn_calculator" />
+
+            <Button
+                android:id="@+id/btn_camera"
+                android:layout_width="347dp"
+                android:layout_height="54dp"
+                android:backgroundTint="#f06292"
+                android:text="KE APLIKASI CAMERA"
+                app:layout_constraintEnd_toEndOf="@+id/btn_map"
+                app:layout_constraintStart_toStartOf="@+id/btn_map"
+                app:layout_constraintTop_toBottomOf="@+id/btn_map" />
+
+            <Button
+                android:id="@+id/btn_setting"
+                android:layout_width="347dp"
+                android:layout_height="54dp"
+                android:text="KE SETTING ANDROID"
+                app:layout_constraintEnd_toEndOf="@+id/btn_contact"
+                app:layout_constraintStart_toStartOf="@+id/btn_contact"
+                app:layout_constraintTop_toBottomOf="@+id/btn_contact" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="181dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="16dp"
+                android:text="Halaman Menu"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_project_9"
+                android:layout_width="347dp"
+                android:layout_height="54dp"
+                android:backgroundTint="#ffb300"
+                android:text="KE PROJEK 9"
+                app:layout_constraintEnd_toEndOf="@+id/btn_setting"
+                app:layout_constraintStart_toStartOf="@+id/btn_setting"
+                app:layout_constraintTop_toBottomOf="@+id/btn_setting" />
+
+            <Button
+                android:id="@+id/btn_lain"
+                android:layout_width="347dp"
+                android:layout_height="54dp"
+                android:layout_marginEnd="156dp"
+                android:backgroundTint="#616161"
+                android:text="KE APLIKASI LAIN"
+                app:layout_constraintEnd_toEndOf="@+id/btn_project_9"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/btn_project_9"
+                app:layout_constraintTop_toBottomOf="@+id/btn_project_9" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="381dp"
         android:layout_height="178dp"
-        android:layout_marginTop="144dp"
         android:alpha="0.2"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo" />
 
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:text="Halaman Menu"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btn_website"
-        android:layout_width="347dp"
-        android:layout_height="54dp"
-        android:layout_marginBottom="12dp"
-        android:backgroundTint="@color/yellow"
-        android:text="KE WEBSITE RESMI"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
