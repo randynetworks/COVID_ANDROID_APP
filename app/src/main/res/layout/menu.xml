@@ -157,7 +157,7 @@
                 android:text="Dialog OK"
                 app:layout_constraintEnd_toEndOf="@+id/btn_lain"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/btn_lain"
+                app:layout_constraintStart_toStartOf="@+id/btn_calculate"
                 app:layout_constraintTop_toBottomOf="@+id/btn_lain" />
 
             <Button
@@ -200,6 +200,16 @@
                 app:layout_constraintEnd_toEndOf="@+id/btn_yes_no"
                 app:layout_constraintStart_toStartOf="@+id/btn_yes_no"
                 app:layout_constraintTop_toBottomOf="@+id/btn_yes_no" />
+
+            <Button
+                android:id="@+id/btn_calculate"
+                android:layout_width="347dp"
+                android:layout_height="54dp"
+                android:backgroundTint="@color/light_blue_primary"
+                android:text="calculate Data"
+                app:layout_constraintEnd_toEndOf="@+id/btn_lain"
+                app:layout_constraintStart_toStartOf="@+id/btn_lain"
+                app:layout_constraintTop_toBottomOf="@+id/btn_lain" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 

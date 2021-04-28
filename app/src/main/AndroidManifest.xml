@@ -27,11 +27,11 @@
         <activity android:name="com.randyramadhan.covid19.MainActivity">
 
         </activity>
-
-
         <activity android:name="com.randyramadhan.covid19.FormSuccess">
 
         </activity>
+        <activity android:name=".Calculate" />
+        <activity android:name=".CalculateSuccess" />
     </application>
 
 </manifest>

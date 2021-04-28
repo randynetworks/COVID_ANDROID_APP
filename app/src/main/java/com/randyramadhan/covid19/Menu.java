@@ -27,12 +27,21 @@ public class Menu extends Activity {
         Button btnSetting = findViewById(R.id.btn_setting);
         Button btnProject9 = findViewById(R.id.btn_project_9);
         Button btnLain = findViewById(R.id.btn_lain);
+        Button btnCalculate = findViewById(R.id.btn_calculate);
 
         Button btnAlertOk = findViewById(R.id.btn_ok);
         Button btnAlertYesNo = findViewById(R.id.btn_yes_no);
         Button btnAlertYesNoCancel = findViewById(R.id.btn_yes_no_cancel);
         Button btnAlertSingle = findViewById(R.id.btn_single_choice);
         Button btnAlertMultiple = findViewById(R.id.btn_multiple_choice);
+
+        btnCalculate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent formCalculate = new Intent(getBaseContext(), Calculate.class);
+                startActivity(formCalculate);
+            }
+        });
 
 
         btnInput.setOnClickListener(new View.OnClickListener() {
