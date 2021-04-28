@@ -16,7 +16,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintVertical_bias="0.0">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -148,6 +148,58 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/btn_project_9"
                 app:layout_constraintTop_toBottomOf="@+id/btn_project_9" />
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="347dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="72dp"
+                android:text="Dialog OK"
+                app:layout_constraintEnd_toEndOf="@+id/btn_lain"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/btn_lain"
+                app:layout_constraintTop_toBottomOf="@+id/btn_lain" />
+
+            <Button
+                android:id="@+id/btn_yes_no"
+                android:layout_width="347dp"
+                android:layout_height="54dp"
+                android:backgroundTint="@color/yellow"
+                android:text="DIALOG YES NO"
+                app:layout_constraintEnd_toEndOf="@+id/btn_ok"
+                app:layout_constraintStart_toStartOf="@+id/btn_ok"
+                app:layout_constraintTop_toBottomOf="@+id/btn_ok" />
+
+            <Button
+                android:id="@+id/btn_single_choice"
+                android:layout_width="347dp"
+                android:layout_height="54dp"
+                android:backgroundTint="@android:color/holo_red_light"
+                android:text="DIALOG SINGLE CHOICE"
+                app:layout_constraintEnd_toEndOf="@+id/btn_yes_no_cancel"
+                app:layout_constraintStart_toStartOf="@+id/btn_yes_no_cancel"
+                app:layout_constraintTop_toBottomOf="@+id/btn_yes_no_cancel" />
+
+            <Button
+                android:id="@+id/btn_multiple_choice"
+                android:layout_width="347dp"
+                android:layout_height="54dp"
+                android:backgroundTint="@android:color/holo_green_light"
+                android:text="DIALOG MULTIPLE CHOICE"
+                app:layout_constraintEnd_toEndOf="@+id/btn_single_choice"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/btn_single_choice"
+                app:layout_constraintTop_toBottomOf="@+id/btn_single_choice" />
+
+            <Button
+                android:id="@+id/btn_yes_no_cancel"
+                android:layout_width="347dp"
+                android:layout_height="54dp"
+                android:backgroundTint="@color/purple_200"
+                android:text="dialog yes no cancel"
+                app:layout_constraintEnd_toEndOf="@+id/btn_yes_no"
+                app:layout_constraintStart_toStartOf="@+id/btn_yes_no"
+                app:layout_constraintTop_toBottomOf="@+id/btn_yes_no" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 

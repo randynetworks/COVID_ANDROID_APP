@@ -8,4 +8,10 @@
         <item>Tasikmalaya</item>
         <item>Garut</item>
     </string-array>
+    <string-array name="val_barang">
+        <item>Sendal</item>
+        <item>Sepatu</item>
+        <item>Kaos Kaki</item>
+        <item>Tali Sepatu</item>
+    </string-array>
 </resources>
